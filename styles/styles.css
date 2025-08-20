@@ -1,5 +1,5 @@
 :root {
-  --bg-light: linear-gradient(135deg, #da77b6c9 0%, #9b98cbe3 100%);
+  --bg-light: linear-gradient(135deg, #e8d8cc 0%, #f39eb3 100%);
   --bg-dark:  linear-gradient(135deg, #2e003e 0%, #501e8b 100%);
 
   --nav-bg: linear-gradient(90deg, #d28eabe3, #ffd6e0);
@@ -94,7 +94,7 @@ body.dark .navbar { background: var(--nav-dark); }
   transition: background .3s ease, transform .2s ease;
 }
 .resume-btn:hover {
-  background: rgba(255,255,255,.35);
+  background: rgba(255, 255, 255, 0.35);
   transform: translateY(-2px);
 }
 
