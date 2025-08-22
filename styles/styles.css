@@ -353,10 +353,21 @@ body.dark .timeline-content {
 .contact-form textarea {
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid rgba(0,0,0,.2);
+  border: 2px solid transparent;
   font-size: 1rem;
   width: 100%;
-  background-color: #f39eb352;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid var(--accent-1);
+  box-shadow: 0 0 12px rgba(28, 5, 50, 0.6);
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none;
 }
 
 .contact-form button {
@@ -364,14 +375,17 @@ body.dark .timeline-content {
   border: none;
   border-radius: 8px;
   background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-  color: rgb(79, 34, 75);
+  color: #efe4f0;
   font-weight: 600;
   cursor: pointer;
-  transition: transform .2s ease;
+  transition: all 0.4s ease;
+  background-size: 200% auto;
 }
 
 .contact-form button:hover {
-  transform: scale(1.05);
+  background-position: right center; 
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 6px 16px rgba(192, 132, 252, 0.5);
 }
 
 .footer {
